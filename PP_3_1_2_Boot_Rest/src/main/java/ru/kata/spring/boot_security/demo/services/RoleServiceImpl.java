@@ -24,7 +24,6 @@ public class RoleServiceImpl implements RoleService{
     }
 
     @Override
-    @Transactional
     public Role getRoleByName(String name) {
         return roleRepository.getRoleByName(name);
     }
@@ -35,7 +34,6 @@ public class RoleServiceImpl implements RoleService{
     }
 
     @Override
-    @Transactional
     public Role getRoleById(int roleId) {
         return roleRepository.getRoleById(roleId);
     }
